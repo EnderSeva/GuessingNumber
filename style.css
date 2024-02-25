@@ -1,0 +1,90 @@
+* {
+    font-family: "Kelly Slab", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#4d006a, #00397b)
+}
+
+.wrapper {
+    padding: 30px 40px;
+    border-radius: 12px;
+    background: #490088;
+    text-align: center;
+    box-shadow: 3px 5px 40px #d187ff;
+    width: 800px;
+}
+
+.wrapper header {
+    font-size: 24px;
+    color: #d187ff;
+}
+
+.wrapper p {
+    color: #d187ff;
+}
+
+.wrapper .input-field {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.input-field input,
+.input-field button {
+    height: 50px;
+    width: calc(100% / 2 - 20px);
+    border: none;
+    outline: 3px solid;
+    outline-color: #0e005d;
+    padding: 0 30px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.input-field button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field input{
+    text-align: center;
+    color: #520071;
+    width: 310px;
+    border: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    display: none;
+}
+
+.input-field input:disabled{
+    cursor: not-allowed;
+    color: #ffe200;
+}
+
+.input-field button{
+    border: none;
+    background: #520071;
+    color: #fff;
+    text-shadow: 0 0 15px rgba(18, 0, 93, 0.5);
+    cursor:pointer;
+    transition: .3s;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.input-field button:active{
+    transform: scale(1.1);
+}
